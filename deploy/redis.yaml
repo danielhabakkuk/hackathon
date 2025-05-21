@@ -6,7 +6,7 @@ spec:
   forProvider:
     location: "centralindia"
     resourceGroupName: bakery-mcp-demo
-    capacity: 0
+    capacity: 2
     family: "C"
     skuName: "Basic"
     redisVersion: "6"
