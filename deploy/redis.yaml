@@ -1,0 +1,15 @@
+apiVersion: cache.azure.upbound.io/v1beta1
+kind: RedisCache
+metadata:
+  name: crossplane-redis-demo
+spec:
+  forProvider:
+    location: "centralindia"
+    resourceGroupName: bakery-mcp-demo
+    capacity: 0
+    family: "C"
+    skuName: "Basic"
+    redisVersion: "6"
+    enableNonSslPort: false
+  providerConfigRef:
+    name: default
