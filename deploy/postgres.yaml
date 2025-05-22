@@ -15,7 +15,7 @@ spec:
     version: "12"
     storageMb: 32768
     skuName: B_Standard_B1ms
-    backupRetentionDays: 7
+    backupRetentionDays: 9
     createMode: Update
     tags:
       environment: demo
