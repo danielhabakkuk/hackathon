@@ -1,7 +1,7 @@
 apiVersion: dbforpostgresql.azure.upbound.io/v1beta1
 kind: FlexibleServer   
 metadata:
-  name: bakery-mcp-demo-psql
+  name: bakery-mcp-demo
   namespace: innovation
 spec:
   forProvider:
