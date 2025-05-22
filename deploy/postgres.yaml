@@ -1,0 +1,21 @@
+apiVersion: dbforpostgresql.azure.upbound.io/v1beta1
+kind: FlexibleServer   
+metadata:
+  name: bakery-mcp-demo-psql
+  namespace: innovation
+spec:
+  forProvider:
+    administratorPasswordSecretRef:
+        key: password
+        name: postgresql-password
+        namespace: innovation
+    location: "Central India"
+    resourceGroupName: bakery-mcp-demo
+    administratorLogin: sqladmin
+    version: "12"
+    storageMb: 32768
+    skuName: B_Standard_B1ms
+    backupRetentionDays: 7
+    createMode: Update
+    tags:
+      environment: demo
